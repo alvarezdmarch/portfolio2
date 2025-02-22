@@ -13,7 +13,7 @@ export default function Page() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 max-w-6xl mx-auto">
           <div className="flex flex-col items-start gap-4 lg:w-2/5 lg:pl-12 lg:pt-4">
             <div className="flex items-center gap-4 transition-transform duration-300 ease-in-out hover:scale-105">
-              <Image src="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/logo.png" alt="Logo" width={60} height={60} unoptimized={true} />
+              <Image src="/logo.png" alt="Logo" width={60} height={60} unoptimized={true} />
               <div>
               <h1 className="text-2xl font-bold">Marcelo Álvarez</h1>
               <p className="text-base text-muted-foreground">Architect | Computational Designer</p>
@@ -71,7 +71,7 @@ export default function Page() {
                 was to design a house proposal for all families in the neighborhood, aligning
                 with their expectations and adjusting to the set of requirements by the
                 construction codes."
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/reconstruccion.png"
+                imageSrc="/reconstruccion.png"
               />
             </FadeIn>
             <FadeIn>
@@ -82,35 +82,35 @@ export default function Page() {
                 house will grant three bedroom + 2 bathroom solution for the community.
                 The main assignment for this task was to constantly communicate and
                 showcase the progress to the neighbors."
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/renderint.png"
+                imageSrc="/renderint.png"
               />
             </FadeIn>
             <FadeIn>
               <ProjectCard
                 title="Social Housing Reconstruction"
                 description=""
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/renderint2.png"
+                imageSrc="/renderint2.png"
               />
             </FadeIn>
             <FadeIn>
               <ProjectCard
                 title="Social Housing Reconstruction"
                 description=""
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/PLANTAS TIPO A2.jpg"
+                imageSrc="/PLANTAS TIPO A2.jpg"
               />
             </FadeIn>
             <FadeIn>
               <ProjectCard
                 title="Sede B80"
                 description="A community headquarters project."
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/sede80.png"
+                imageSrc="/sede80.png"
               />
             </FadeIn>
             <FadeIn>
               <ProjectCard
                 title="Sede B80"
                 description="A community headquarters project."
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/sede80diag.png"
+                imageSrc="/sede80diag.png"
               />
             </FadeIn>
             <FadeIn>
@@ -129,28 +129,28 @@ export default function Page() {
               owner already constructed a 4.5 m. height platform. The design
               proposal satisfied both her requirements and construction codes
               completely."
-              imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/karina.png"
+              imageSrc="/karina.png"
               />
             </FadeIn>
             <FadeIn>
               <ProjectCard
                 title="Southern Housing Solution Assistance"
                 description=""
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/sur.png"
+                imageSrc="/sur.png"
               />
             </FadeIn>
             <FadeIn>
               <ProjectCard
                 title="Lo Orozco"
                 description=""
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/orozco.png"
+                imageSrc="/orozco.png"
               />
             </FadeIn>
             <FadeIn>
               <ProjectCard
                 title="Interior Remodeling Assessment"
                 description=""
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/precision.jpg"
+                imageSrc="/precision.jpg"
               />
             </FadeIn>
           </div>
@@ -165,7 +165,7 @@ export default function Page() {
                 Vegas, Patrick Kastner, and Marcelo Álvarez. The main purpose of
                 developing visualization components is to leverage the power of a
                 Rhinoceros - Grasshopper environment for the end user."
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/umcfviz.png"
+                imageSrc="/umcfviz.png"
               />
             </FadeIn>
             <FadeIn>
@@ -177,7 +177,7 @@ export default function Page() {
                 performing a high resolution simulation and developing
                 scripts to manipulate the resulting data. One of the
                 results is a custom web application to visualize the data."
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/cfdviz.png"
+                imageSrc="/cfdviz.png"
               />
             </FadeIn>
             <FadeIn>
@@ -191,7 +191,7 @@ export default function Page() {
                 directly from the IFC dataset. Additionally, by leveraging the power of graph
                 theory, additional tools to plot graphs are developed to generate a complete
                 understanding of the BIM model quality, and the building performance."
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/ifcbim.png"
+                imageSrc="/ifcbim.png"
               />
             </FadeIn>
             <FadeIn>
@@ -200,7 +200,7 @@ export default function Page() {
                 description="This implementation focuses on exploring design spaces in early design stages. 
                 The proposed technique approaches the problem of reducing the flexibility of the design space 
                 while advancing to later design stages for vault-like shapes."
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/res2.png"
+                imageSrc="/res2.png"
               />
             </FadeIn>
             <FadeIn>
@@ -210,7 +210,7 @@ export default function Page() {
                 generation through topological manipulation. Currently, topology-driven form-finding has been 
                 implemented in tensile structures, but no further studies have been conducted for compression-only structures. 
                 The focus of this study is to approach the problem of highly determined vault shapes by their input topology. "
-                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/res1.png"
+                imageSrc="/res1.png"
               />
             </FadeIn>
           </div>
