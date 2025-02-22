@@ -2,7 +2,7 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.alvarezdm.me",
+  "homepage": "https://github.com/alvarezdmarch/portfolio2",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy" : "npm run build && npm run export",
-    "deploy" : "gh-pages -d out",
+    "deploy" : "gh-pages -d out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
