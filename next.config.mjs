@@ -7,6 +7,8 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/portfolio2',
+  assetPrefix: '/portfolio2/',
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -21,7 +23,7 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-}
+};
 
 mergeConfig(nextConfig, userConfig)
 

@@ -13,7 +13,7 @@ export default function Page() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 max-w-6xl mx-auto">
           <div className="flex flex-col items-start gap-4 lg:w-2/5 lg:pl-12 lg:pt-4">
             <div className="flex items-center gap-4 transition-transform duration-300 ease-in-out hover:scale-105">
-              <Image src="/logo.png" alt="logo" width={60} height={60} />
+              <Image src="/logo.png" alt="Logo" width={60} height={60} unoptimized={true} />
               <div>
               <h1 className="text-2xl font-bold">Marcelo Álvarez</h1>
               <p className="text-base text-muted-foreground">Architect | Computational Designer</p>
