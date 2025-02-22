@@ -5,7 +5,7 @@ const nextConfig = {
       unoptimized: true,
     },
     basePath: "/portfolio2",
-    assetPrefix: process.env.NODE_ENV === "production" ? "https://www.alvarezdm.me" : "",
+    assetPrefix: "/portfolio2/",
   };
   
   module.exports = nextConfig;
