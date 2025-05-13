@@ -5,6 +5,7 @@ import { Github, Linkedin, Mail } from "lucide-react"
 import { ProjectCard } from "@/components/project-card"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { FadeIn } from "@/components/fade-in"
+import { useState } from "react"
 
 export default function Page() {
   return (
@@ -13,7 +14,13 @@ export default function Page() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-8 max-w-6xl mx-auto">
           <div className="flex flex-col items-start gap-4 lg:w-2/5 lg:pl-12 lg:pt-4">
             <div className="flex items-center gap-4 transition-transform duration-300 ease-in-out hover:scale-105">
-              <Image src="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/logo.png" alt="Logo" width={60} height={60} unoptimized={true} />
+              <Image 
+              className="filter invert dark:filter-none transition-filter"
+              src="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/logo.png"
+              alt="Logo"
+              width={60}
+              height={60}
+              unoptimized={true} />
               <div>
               <h1 className="text-2xl font-bold">Marcelo Álvarez</h1>
               <p className="text-base text-muted-foreground">Architect | Computational Designer</p>
@@ -43,6 +50,20 @@ export default function Page() {
               </Link>
               <ThemeToggle />
             </div>
+            <Link
+              href="https://alvarezdm.me"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button
+                className="self-stretch w-full mt-3 inline-block px-4 py-2 
+                          bg-primary-foreground text-primary 
+                          font-medium 
+                          transition-colors hover:bg-primary-foreground/75"
+              >
+                Personal website - About me
+              </button>
+            </Link>
           </div>
           <div className="lg:w-1/2">
             <h2 className="text-lg font-semibold mb-2">About Me</h2>
@@ -58,8 +79,13 @@ export default function Page() {
       </header>
       <main className="flex-grow container mx-auto px-4 py-8 overflow-hidden">
         <div className="grid md:grid-cols-2 gap-8 h-[calc(100vh-14rem)] max-w-full mx-auto">
-          <div className="space-y-8 overflow-y-auto pr-4">
-            <h2 className="text-xl font-semibold mb-4 sticky top-0 bg-background/80 backdrop-blur-sm pt-4 pb-2 text-center z-10">
+          <div className="space-y-8 overflow-y-auto px-4">
+            <h2 className="sticky top-0 z-10
+                 text-xl font-semibold mb-4
+                 bg-background/50 backdrop-blur-sm
+                 py-2
+                 text-center
+                 -mx-4 px-4">
               Architecture
             </h2>
             <FadeIn>
@@ -97,6 +123,14 @@ export default function Page() {
                 title="Social Housing Reconstruction"
                 description=""
                 imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/PLANTAS TIPO A2.jpg"
+              />
+            </FadeIn>
+            <FadeIn>
+              <ProjectCard
+                title="Modulo - Healthcare of the Future"
+                description="As a part of the course Healthcare Design of the Future at Georgia Tech, this project is a modular solution
+                addressing the transportation limitations of the rural healthcare system in the US."
+                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/hcotf.png"
               />
             </FadeIn>
             <FadeIn>
@@ -148,16 +182,58 @@ export default function Page() {
             </FadeIn>
             <FadeIn>
               <ProjectCard
+                title="IceNova MARS"
+                description=""
+                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/mars1.jpg"
+              />
+            </FadeIn>
+            <FadeIn>
+              <ProjectCard
+                title="IceNova MARS"
+                description=""
+                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/mars2.jpg"
+              />
+            </FadeIn>
+            <FadeIn>
+              <ProjectCard
                 title="Interior Remodeling Assessment"
                 description=""
                 imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/precision.jpg"
               />
             </FadeIn>
           </div>
-          <div className="space-y-8 overflow-y-auto pr-4">
-            <h2 className="text-xl font-semibold mb-4 sticky top-0 bg-background/80 backdrop-blur-sm pt-4 pb-2 text-center z-10">
+          <div className="space-y-8 overflow-y-auto px-4">
+            <h2 className="sticky top-0 z-10
+                 text-xl font-semibold mb-4
+                 bg-background/50 backdrop-blur-sm
+                 py-2
+                 text-center
+                 -mx-4 px-4">
               Computational Design
             </h2>
+            <FadeIn>
+              <ProjectCard
+                title="Office Energy Model - Design Space Exploration for Glare"
+                description="Based on a custom Grasshopper script using EnergyPlus through ClimateStudio, this project is an early design space
+                aiming to explore the energy, daylighting, and glare performance of a small office building."
+                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/9seg53.gif"
+              />
+            </FadeIn>
+            <FadeIn>
+              <ProjectCard
+                title="Office Energy Model - Design Space Exploration for Daylight"
+                description="Based on a custom Grasshopper script using EnergyPlus through ClimateStudio, this project is an early design space
+                aiming to explore the energy, daylighting, and glare performance of a small office building."
+                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/9seg3q.gif"
+              />
+            </FadeIn>
+            <FadeIn>
+              <ProjectCard
+                title="Office Energy Model - Design Space Exploration for Daylight"
+                description=""
+                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/9seg25.gif"
+              />
+            </FadeIn>
             <FadeIn>
               <ProjectCard
                 title="UMCF Grasshopper Plugin - Visualization Tools"
@@ -182,6 +258,21 @@ export default function Page() {
             </FadeIn>
             <FadeIn>
               <ProjectCard
+                title="CFD large dataset manipulation"
+                description=""
+                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/cfddata.png"
+              />
+            </FadeIn>
+            <FadeIn>
+              <ProjectCard
+                title="urbanMicroclimateFoam vs. ENVI-met"
+                description="This project is an initial statistical comparison between the urbanMicroclimateFoam solver and
+                ENVI-met. The main goal is to understand the differences between both solvers and calibrate the UMCF solver using Grasshopper."
+                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/umcfvsenvimet.png"
+              />
+            </FadeIn>
+            <FadeIn>
+              <ProjectCard
                 title="BIM/IFC Assessment and Manipulation"
                 description="The project aims to augment the information and geometrical entities from a BIM
                 model. Specifically, a workflow for IFC authoring would allow to perform custom
@@ -192,6 +283,15 @@ export default function Page() {
                 theory, additional tools to plot graphs are developed to generate a complete
                 understanding of the BIM model quality, and the building performance."
                 imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/ifcbim.png"
+              />
+            </FadeIn>
+            <FadeIn>
+              <ProjectCard
+                title="Metro Atlanta Diastance Network Analysis"
+                description="This project is a part of the course Public Health Analyttics at Georgia Tech. The main contribution is the
+                extraction of data from the OSM database, and the development of a custom interpolation method to create a complete geospatial representation
+                of the metro Atlanta distance network."
+                imageSrc="https://raw.githubusercontent.com/alvarezdmarch/portfolio2/refs/heads/main/public/mapping.png"
               />
             </FadeIn>
             <FadeIn>
